@@ -1,0 +1,12 @@
+Run <Obey$Dir>.Resources.ResFind InsertIcn
+|
+Set InsertIcn$Help InsertIcnRes:InsertIcn
+Set InsertIcn$Version "1.05"
+Set InsertIcn$Web "http://www.arcsite.de/hp/bracke/"
+Set InsertIcn$Title "InsertIcn"
+Set InsertIcn$Publisher "Bent Bracke"
+Set InsertIcn$Description "Inserts sprites into specific spritepools."
+Run <InsertIcn$Dir>.Resources.ReadToken InsertIcnRes:Messages DESCRIPTION
+do Set InsertIcn$Description <ReadToken$Value>
+|
+Iconsprites <InsertIcn$Dir>.!Sprites
